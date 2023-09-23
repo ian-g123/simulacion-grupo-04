@@ -26,3 +26,4 @@ Corrector Asignado: Azul Villanueva
 
 - [ ] Introducir un resúmen del trabajo práctico.
 - [ ] Documentar los métodos del generador.
+- [ ] Verificar por qué no funciona el test en el ej4.
