@@ -22,8 +22,3 @@ Corrector Asignado: Azul Villanueva
 | Valentina Gemetto  | 109667  |
 | Agustin Puglisi  | 104245 |
 | Ezequiel Vilardo  | 104980  |
-
-
-- [ ] Introducir un resúmen del trabajo práctico.
-- [ ] Documentar los métodos del generador.
-- [ ] Verificar por qué no funciona el test en el ej4.
