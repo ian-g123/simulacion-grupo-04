@@ -21,7 +21,7 @@ upper_mask = (~lower_mask) & W_MASK
 
 
 # Definimos la clase MT19937
-class MerseeneTwister:
+class MersenneTwister:
     # Inicializa el generador mersenne-twister con una semilla
     # Setea el tamaño de la secuencia en N (para nuestro caso es 624)
     def __init__(self, seed):
@@ -45,7 +45,8 @@ class MerseeneTwister:
     # luego se le aplica una marca XOR para finalmente combinar el resultado con otro estado M posiciones mas adelante.
     def _twist(self):
         for i in range(N):
-            x = (self.state[i] & upper_mask) + (self.state[(i + 1) % N] & lower_mask)
+            x = (self.state[i] & upper_mask) + \
+                (self.state[(i + 1) % N] & lower_mask)
             xA = x >> 1
             if x % 2 != 0:
                 xA ^= A
